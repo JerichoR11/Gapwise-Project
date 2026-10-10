@@ -17,7 +17,10 @@ def check_framework(framework: str) -> str:
     if framework not in VALID_FRAMEWORKS:
         raise HTTPException(status_code=404, detail=f"Unknown framework: {framework}")
     return framework
-
+# run command  .venv\Scripts\Activate.ps1 
+# py -m uvicorn app.main:app --reload
+# http://localaddress:PORTNUMBER/docs
+#
 
 # ----------------------------------------------------------------------------
 # Health Check to check if the Application is working
