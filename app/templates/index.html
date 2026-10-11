@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      color: #222;
+      background: #fff;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    header h1 {
+      font-size: 1.4rem;
+    }
+
+    nav a {
+      color: #555;
+      text-decoration: none;
+      margin-left: 16px;
+    }
+
+    nav a:hover {
+      color: #000;
+    }
+
+    main {
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    main h2 {
+      font-size: 2.5rem;
+      margin-bottom: 16px;
+    }
+
+    main p {
+      color: #555;
+      margin-bottom: 32px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border: 1px solid #222;
+      border-radius: 6px;
+      color: #222;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #222;
+      color: #fff;
+    }
+
+    footer {
+      text-align: center;
+      color: #888;
+      font-size: 0.9rem;
+      padding: 20px 0;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>{{ title }}</h1>
+    <nav>
+      <a href="#">About</a>
+      <a href="/docs">API</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Welcome to {{ title }}</h2>
+    <p>Gapwise is a GRC crosswalk API that maps NIST SP 800-53 and CSA CCM controls to company policies, scores audit readiness, and flags compliance gaps.</p>
+   <a href="/dashboard" class="btn">Get started</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 {{ title }}</p>
+  </footer>
+</body>
+</html>

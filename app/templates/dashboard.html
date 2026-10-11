@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }}</title>
+ 
+<style>
+    .dashboard {
+  padding: 40px 0;
+}
+
+.dashboard h2 {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: #555;
+  margin-bottom: 24px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin-bottom: 40px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-label {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.card-value {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.dashboard h3 {
+  margin-bottom: 12px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  color: #555;
+  font-weight: 600;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1>Gapwise</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/dashboard">Dashboard</a>
+    </nav>
+  </header>
+
+  <section class="dashboard">
+    <h2>Dashboard</h2>
+    <p class="subtitle">Overview of your audits.</p>
+
+    <div class="cards">
+      <div class="card">
+        <p class="card-label">Total audits</p>
+        <p class="card-value">12</p>
+      </div>
+      <div class="card">
+        <p class="card-label">Open gaps</p>
+        <p class="card-value">5</p>
+      </div>
+      <div class="card">
+        <p class="card-label">Resolved</p>
+        <p class="card-value">27</p>
+      </div>
+    </div>
+
+    <h3>Recent audits</h3>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Date</th>
+          <th>Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Security review</td>
+          <td>Oct 10, 2026</td>
+          <td>Open</td>
+        </tr>
+        <tr>
+          <td>Data policy check</td>
+          <td>Oct 8, 2026</td>
+          <td>Resolved</td>
+        </tr>
+        <tr>
+          <td>Access control audit</td>
+          <td>Oct 5, 2026</td>
+          <td>In progress</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Gapwise</p>
+  </footer>
+</body>
+
+</html>
